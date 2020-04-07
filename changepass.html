@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Update Password</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header id="main-header" class="py-5 bg-info text-white">
+    <div class="container">
+      <div class="text-center">
+          <h1>University Database</h1>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ACTIONS -->
+  <section id="action" class="py-4 mb-4 bg-light">
+    <div class="container">
+      <div class="row">
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LOGIN -->
+  <section id="login">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="card">
+            <div class="card-header">
+              <h4>Update Password</h4>
+            </div>
+            <div class="card-body">
+              <form action="changepass.php" method="post">
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="text" id="email" class="form-control" required name="l_id" placeholder="xyz@iitp.ac.in">
+                </div>
+                <div class="form-group">
+                  <label for="oldpassword">Old Password</label>
+                  <input type="password" id="oldpassword" class="form-control" required name="l_pass">
+                </div>
+                <div class="form-group">
+                  <label for="newpassword">New Password</label>
+                  <input type="password" id="newpassword" class="form-control" required name="l_newpass" title="A good password contains at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+                </div>
+                <div class="form-group">
+                  <label for="newpasswordrep">Repeat New Password</label>
+                  <input type="password" id="newpasswordrep" class="form-control" required name="l_newpassrep" title="A good password contains at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+                </div>
+                <input type="submit" class="btn btn-info btn-block" value="Submit">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br><br><br>
+  <br><br><br>
+  <br><br><br>
+  <br><br><br>
+  <footer id="main-footer" class="bg-dark text-white mt-5 p-3">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p class="text-muted text-center">1701CS21</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://cdn.ckeditor.com/4.7.1/standard/ckeditor.js"></script>
+  <script>
+      CKEDITOR.replace( 'editor1' );
+  </script>
+</body>
+</html>
